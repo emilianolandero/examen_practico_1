@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multiventas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="topbar">
+    <a href="#" class="logo"><span class="logo-a">MULTI</span><span class="logo-b">VENTAS</span></a>
+
+    <form class="buscador" onsubmit="return false">
+      <input type="text" placeholder="Search for products">
+      <button type="submit" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+    <div class="contacto-top">
+      <div class="servicio">
+        <small>Servicio al cliente</small>
+        <strong>+52 9161215695</strong>
+      </div>
+      <a href="#" class="icono" aria-label="Favoritos"><i class="fa-regular fa-heart"></i></a>
+      <a href="#" class="icono carrito" aria-label="Carrito"><i class="fa-solid fa-cart-shopping"></i><span class="badge">0</span></a>
+    </div>
+  </header>
+
+  <!-- NAVEGACIÓN -->
+  <nav class="menu">
+    <a href="#" class="btn-categorias"><i class="fa-solid fa-bars"></i> Categorías <i class="fa-solid fa-caret-down"></i></a>
+    <div class="links">
+      <a href="#" class="activo">Inicio</a>
+      <a href="#">Tienda</a>
+      <a href="#">Galeria</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Contacto</a>
+    </div>
+  </nav>
+
+  <main class="contenedor">
+
+    <!-- CARRUSEL + OFERTAS -->
+    <section class="hero">
+      <div class="carrusel" id="carrusel">
+        <div class="slide activa" style="background-image:url('img/carrusel-2.jpg')">
+          <div class="caption">
+            <h1>Moda Femenina</h1>
+            <p>Lorem ipsum dolor sit amet lorem magna erat diam stet. Sadipscing duo stet amet amet ndiam elitr ipsum diam.</p>
+            <a href="#" class="btn-borde">Comprar</a>
+          </div>
+        </div>
+        <div class="slide" style="background-image:url('img/carrusel-1.jpg')">
+          <div class="caption">
+            <h1>Moda Masculina</h1>
+            <p>Lorem ipsum dolor sit amet lorem magna erat diam stet. Sadipscing duo stet amet amet ndiam elitr ipsum diam.</p>
+            <a href="#" class="btn-borde">Comprar</a>
+          </div>
+        </div>
+        <div class="slide" style="background-image:url('img/carrusel-3.jpg')">
+          <div class="caption">
+            <h1>Moda Infantil</h1>
+            <p>Lorem ipsum dolor sit amet lorem magna erat diam stet. Sadipscing duo stet amet amet ndiam elitr ipsum diam.</p>
+            <a href="#" class="btn-borde">Comprar</a>
+          </div>
+        </div>
+        <button class="flecha izq" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="flecha der" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+      <div class="ofertas">
+        <div class="oferta" style="background-image:url('img/oferta-1.jpg')">
+          <div class="oferta-texto">
+            <h6>AHORRA 20%</h6>
+            <h3>Ofertas de temporada</h3>
+            <a href="#" class="btn-amarillo">Comprar</a>
+          </div>
+        </div>
+        <div class="oferta" style="background-image:url('img/oferta-2.jpg')">
+          <div class="oferta-texto">
+            <h6>AHORRA 30%</h6>
+            <h3>Ofertas especiales</h3>
+            <a href="#" class="btn-amarillo">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BENEFICIOS -->
+  <section class="beneficios">
+    <div class="beneficio"><i class="fa-solid fa-check"></i><span>Mejora calidad</span></div>
+    <div class="beneficio"><i class="fa-solid fa-truck-fast"></i><span>Envío gratis</span></div>
+    <div class="beneficio"><i class="fa-solid fa-right-left"></i><span>Devolución de 30 días</span></div>
+    <div class="beneficio"><i class="fa-solid fa-phone-volume"></i><span>Soporte 24/7</span></div>
+  </section>
+
+  <main class="contenedor">
+
+    <!-- CATEGORÍAS -->
+    <h2 class="titulo"><span>Categorías</span></h2>
+    <section class="grid-4 categorias">
+      <a href="#" class="cat">
+        <img src="img/cat-1.jpg" alt="Ropa">
+        <div><h6>Ropa</h6><small>100 Productos</small></div>
+      </a>
+      <a href="#" class="cat">
+        <img src="img/cat-2.jpg" alt="Electrónica">
+        <div><h6>Electrónica</h6><small>100 Productos</small></div>
+      </a>
+      <a href="#" class="cat">
+        <img src="img/cat-3.jpg" alt="Calzado">
+        <div><h6>Calzado</h6><small>100 Productos</small></div>
+      </a>
+      <a href="#" class="cat">
+        <img src="img/cat-4.jpg" alt="Belleza">
+        <div><h6>Belleza</h6><small>100 Productos</small></div>
+      </a>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <h2 class="titulo"><span>Productos destacado</span></h2>
+    <section class="grid-4 productos">
+      <article class="producto">
+        <img src="img/product-1.jpg" alt="Cámara fotográfica Canon">
+        <h6>Cámara fotográfica Canon</h6>
+        <div class="precio"><strong>$12,500.00</strong><del>$15,000.00</del></div>
+        <div class="estrellas"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>(99)</small></div>
+      </article>
+      <article class="producto">
+        <img src="img/product-2.jpg" alt="Blusa azul">
+        <h6>Blusa azul</h6>
+        <div class="precio"><strong>$250.00</strong><del>$400.00</del></div>
+        <div class="estrellas"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><small>(99)</small></div>
+      </article>
+      <article class="producto">
+        <img src="img/product-3.jpg" alt="Lámpara de mesa">
+        <h6>Lámpara de mesa</h6>
+        <div class="precio"><strong>$1,250.00</strong><del>$2,300.00</del></div>
+        <div class="estrellas"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><small>(99)</small></div>
+      </article>
+      <article class="producto">
+        <img src="img/product-4.jpg" alt="Tenis Nike">
+        <h6>Tenis Nike</h6>
+        <div class="precio"><strong>$799.00</strong><del>$999.00</del></div>
+        <div class="estrellas"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>(99)</small></div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="footer-cols">
+      <div>
+        <h5>Contáctanos</h5>
+        <p class="gris">Ubica nuestra tienda física en</p>
+        <p><i class="fa-solid fa-location-dot"></i> Av. central No. 123</p>
+        <p><i class="fa-solid fa-envelope"></i> info@tienda.com</p>
+        <p><i class="fa-solid fa-phone"></i> +52 961 61 12345</p>
+      </div>
+      <div>
+        <h5>Menú</h5>
+        <a href="#"><i class="fa-solid fa-angle-right"></i> Home</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i> Tienda</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i> Galería</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i> Nosotros</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i> Contacto</a>
+      </div>
+      <div>
+        <h5>Nuestras redes sociales</h5>
+        <div class="redes">
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copy">© <a href="#">Domain</a>. Todos los derechos reservados. Diseñado por ti.</div>
+  </footer>
+
+  <script>
+    // Carrusel simple
+    (function () {
+      var slides = document.querySelectorAll('#carrusel .slide');
+      var i = 0;
+      function mostrar(n) {
+        slides[i].classList.remove('activa');
+        i = (n + slides.length) % slides.length;
+        slides[i].classList.add('activa');
+      }
+      document.querySelector('#carrusel .izq').addEventListener('click', function () { mostrar(i - 1); });
+      document.querySelector('#carrusel .der').addEventListener('click', function () { mostrar(i + 1); });
+      setInterval(function () { mostrar(i + 1); }, 5000);
+    })();
+  </script>
+</body>
+</html>
